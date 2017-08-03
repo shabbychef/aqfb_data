@@ -131,27 +131,26 @@
 "dvix"
 
 #' @title Monthly Fama French 5 Industry Returns
-#' @description The monthly returns of the 4 Fama French Factors: Market, the cap factor SMB, 
-#' the growth factor HML, and the momentum factor UMD.
-#' @format An \code{xts} object with 1,056 observations and 5 columns. 
-#' The data run from January, 1927 through December, 2014.
+#' @description The monthly returns of 5 industries: Consumer, Manufacturing, High Technology, Healthcare and Other.
+#' @format An \code{xts} object with 1,080 observations and 5 columns. 
+#' The data run from January, 1927 through December, 2016.
 #' As in the upstream source, the data are given in \emph{percents}, meaning a
-#' value of 1.00 corresponds to a 1% movement.
+#' value of 1.00 corresponds to a 1\% movement.
 #' Note also that returns presumably are \sQuote{simple} returns, not log
 #' returns, though this is not clarified by the upstream source.
 #' The columns are defined as follows:
 #' \describe{
-#'  \item{\code{Consumer}}{The monthly returns of the Consumer industry.}
-#'  \item{\code{Manufacturing}}{The monthly returns of the Manufacturing industry.}
-#'  \item{\code{Technology}}{The monthly returns of the Technology industry.}
-#'  \item{\code{Healthcare}}{The monthly returns of the Healthcare industry.}
-#'  \item{\code{Other}}{The monthly returns of the Other industry.}
+#'  \item{\code{Consumer}}{The monthly returns of the Consumer industry, published as \dQuote{Cnsmr}.}
+#'  \item{\code{Manufacturing}}{The monthly returns of the Manufacturing industry, published as \dQuote{Manuf}.}
+#'  \item{\code{Technology}}{The monthly returns of the Technology industry, published as \dQuote{HiTec}.}
+#'  \item{\code{Healthcare}}{The monthly returns of the Healthcare industry, published as \dQuote{Hlth}.}
+#'  \item{\code{Other}}{The monthly returns of the Other industry, published as \dQuote{Other}.}
 #' }
 #' @source Kenneth French data library, via Quandl. 
 #' See \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html},
-#' data description at \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_5_ind_port.html},
-#' and Quandl datasets \code{KFRENCH/5_IND_PORTF_M}.
+#' data description at \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_5_ind_port.html}.
 #' @author Steven E. Pav \email{steven@@gilgamath.com}
+#' @note These are not the \dQuote{ex dividend} returns series.
 #' @examples
 #' \dontrun{
 #' data(mind5)
