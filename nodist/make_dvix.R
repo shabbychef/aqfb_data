@@ -49,6 +49,7 @@ vix <- rbind(vxo, vixy %>% select(Date,VIX_Close) %>% rename(VIX=VIX_Close)) %>%
 	filter(Date <= as.Date('2016-12-31'))
 
 dvix <- xts(x=vix$VIX,order.by=as.Date.POSIXlt(as.POSIXlt(vix$Date)))
+colnames(dvix) <- c('VIX')
 
 devtools::use_data(dvix,pkg='../',overwrite=TRUE)
 
