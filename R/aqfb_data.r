@@ -146,7 +146,7 @@
 #'  \item{\code{Healthcare}}{The monthly returns of the Healthcare industry, published as \dQuote{Hlth}.}
 #'  \item{\code{Other}}{The monthly returns of the Other industry, published as \dQuote{Other}.}
 #' }
-#' @source Kenneth French data library, via Quandl. 
+#' @source Kenneth French data library.
 #' See \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html},
 #' data description at \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_5_ind_port.html}.
 #' @author Steven E. Pav \email{steven@@gilgamath.com}
@@ -157,6 +157,40 @@
 #' str(mind5)
 #' }
 "mind5"
+
+#' @title Monthly Fama French 10 Industry Returns
+#' @description The monthly returns of 10 industries: Nondurable goods, durable goods,
+#' Manufacturing, Energy, High Technology, Telecom, Retail, Healthcare, Utilities and Other.
+#' @format An \code{xts} object with 1,080 observations and 10 columns. 
+#' The data run from January, 1927 through December, 2016.
+#' As in the upstream source, the data are given in \emph{percents}, meaning a
+#' value of 1.00 corresponds to a 1\% movement.
+#' Note also that returns presumably are \sQuote{simple} returns, not log
+#' returns, though this is not clarified by the upstream source.
+#' The columns are defined as follows:
+#' \describe{
+#'  \item{\code{NondurableGoods}}{The monthly returns of the nondurable goods industry, published as \dQuote{NoDur}.}
+#'  \item{\code{DurableGoods}}{The monthly returns of the durable goods industry, published as \dQuote{Durbl}.}
+#'  \item{\code{Manufacturing}}{The monthly returns of the Manufacturing industry, published as \dQuote{Manuf}.}
+#'  \item{\code{Energy}}{The monthly returns of the Energy industry, published as \dQuote{Enrgy}.}
+#'  \item{\code{Technology}}{The monthly returns of the Technology industry, published as \dQuote{HiTec}.}
+#'  \item{\code{Telecom}}{The monthly returns of the Telecommunications industry, published as \dQuote{Telcm}.}
+#'  \item{\code{Retail}}{The monthly returns of the Retail industry, published as \dQuote{Shops}.}
+#'  \item{\code{Healthcare}}{The monthly returns of the Healthcare industry, published as \dQuote{Hlth}.}
+#'  \item{\code{Utilities}}{The monthly returns of the Utilities industry, published as \dQuote{Utils}.}
+#'  \item{\code{Other}}{The monthly returns of the Other industry, published as \dQuote{Other}.}
+#' }
+#' @source Kenneth French data library.
+#' See \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html},
+#' data description at \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_10_ind_port.html}.
+#' @author Steven E. Pav \email{steven@@gilgamath.com}
+#' @note These are not the \dQuote{ex dividend} returns series.
+#' @examples
+#' \dontrun{
+#' data(mind10)
+#' str(mind10)
+#' }
+"mind10"
 
 #for vim modeline: (do not edit)
 # vim:fdm=marker:fmr=FOLDUP,UNFOLD:cms=#%s:syn=r:ft=r
