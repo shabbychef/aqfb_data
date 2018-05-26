@@ -192,5 +192,51 @@
 #' }
 "mind10"
 
+#' @title Goyal Welch Equity Premium Data.
+#' @description The yearly excess returns of the Market, aligned with a number
+#' of lagging independent variables which have been posited to be predictive
+#' of the excess returns.
+#' @format An \code{xts} object with 215 observations and 23 columns. 
+#' The data are annual and span from 1802 through 2016. 
+#' As in the upstream source, the data are given in \emph{percents}, meaning a
+#' value of 1.00 corresponds to a 1\% movement.
+#' The columns are defined in the paper, but are roughly as follows:
+#' \describe{
+#'  \item{\code{cpi}}{The Consumer price index}
+#'  \item{\code{gold}}{The spot price of gold}
+#'  \item{\code{infl}}{Inflation as a percent?}
+#'  \item{\code{tbill}}{The Treasury bill rate?}
+#'  \item{\code{ltyld10}}{???}
+#'  \item{\code{ltrate}}{???}
+#'  \item{\code{callmoney}}{????}
+#'  \item{\code{aaa}}{????}
+#'  \item{\code{baa}}{????}
+#'  \item{\code{corprate}}{????}
+#'  \item{\code{corprate.i}}{????}
+#'  \item{\code{sp500index}}{The closing value of the S&P 500 index.}
+#'  \item{\code{sp500d12}}{????}
+#'  \item{\code{sp500e12}}{????}
+#'  \item{\code{vwm}}{????}
+#'  \item{\code{vwx}}{????}
+#'  \item{\code{svar}}{????}
+#'  \item{\code{bkmk}}{????}
+#'  \item{\code{ntis}}{????}
+#'  \item{\code{eqis}}{????}
+#'  \item{\code{csp}}{????}
+#'  \item{\code{cay}}{????}
+#'  \item{\code{ik}}{????}
+#' }
+#' @references 
+#' Welch, Ivo and Goyal, Amit. "A Comprehensive Look at The Empirical Performance of Equity Premium Prediction." 
+#' The Review of Financial Studies 21 , no. 4 (2007): 1455-1508. \url{https://doi.org/10.1093/rfs/hhm014}
+#' @source Ivo Welch's data page, \url{http://www.ivo-welch.info/professional/goyal-welch/}. 
+#' @author Steven E. Pav \email{steven@@gilgamath.com}
+#' @examples
+#' \dontrun{
+#' data(gw)
+#' str(gw)
+#' }
+"gw"
+
 #for vim modeline: (do not edit)
 # vim:fdm=marker:fmr=FOLDUP,UNFOLD:cms=#%s:syn=r:ft=r
