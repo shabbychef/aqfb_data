@@ -12,6 +12,7 @@ suppressMessages({
 	library(readxl)
 	library(httr)
 	library(devtools)
+	library(usethis)
 
 	library(xts)
 	library(Quandl)
@@ -51,7 +52,7 @@ vix <- rbind(vxo, vixy %>% select(Date,VIX_Close) %>% rename(VIX=VIX_Close)) %>%
 dvix <- xts(x=vix$VIX,order.by=as.Date.POSIXlt(as.POSIXlt(vix$Date)))
 colnames(dvix) <- c('VIX')
 
-devtools::use_data(dvix,pkg='../',overwrite=TRUE)
+usethis::use_data(dvix,pkg='../',overwrite=TRUE)
 
 #for vim modeline: (do not edit)
 # vim:fdm=marker:fmr=FOLDUP,UNFOLD:cms=#%s:syn=r:ft=r:nu
