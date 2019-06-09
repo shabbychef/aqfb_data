@@ -8,6 +8,7 @@ suppressMessages({
 	library(xts)
 	library(Quandl)
 	library(devtools)
+	library(usethis)
 })
 
 # old way, which only went through 2104:
@@ -71,8 +72,9 @@ colnames(mind) <- gsub('Manuf','Manufacturing',colnames(mind))
 colnames(mind) <- gsub('HiTec','Technology',colnames(mind))
 colnames(mind) <- gsub('Hlth','Healthcare',colnames(mind))
 
-mind5 <- mind['1926-12-30::2016-12-21',]
-devtools::use_data(mind5,pkg='../',overwrite=TRUE)
+mind5 <- mind['1926-12-30::2018-12-28',]
+#usethis::use_data(mind5,pkg='../',overwrite=TRUE)
+usethis::use_data(mind5,overwrite=TRUE)
 
 #for vim modeline: (do not edit)
 # vim:fdm=marker:fmr=FOLDUP,UNFOLD:cms=#%s:syn=r:ft=r
