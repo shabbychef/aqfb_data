@@ -161,8 +161,8 @@
 #' @title Monthly Fama French 10 Industry Returns
 #' @description The monthly returns of 10 industries: Nondurable goods, durable goods,
 #' Manufacturing, Energy, High Technology, Telecom, Retail, Healthcare, Utilities and Other.
-#' @format An \code{xts} object with 1,080 observations and 10 columns. 
-#' The data run from January, 1927 through December, 2016.
+#' @format An \code{xts} object with 1,104 observations and 10 columns. 
+#' The data run from January, 1927 through December, 2018.
 #' As in the upstream source, the data are given in \emph{percents}, meaning a
 #' value of 1.00 corresponds to a 1\% movement.
 #' Note also that returns presumably are \sQuote{simple} returns, not log
