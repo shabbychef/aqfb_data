@@ -9,6 +9,7 @@ suppressMessages({
 	library(xts)
 	library(Quandl)
 	library(devtools)
+	library(usethis)
 })
 
 fff.xts <- Quandl("KFRENCH/FACTORS_M",
@@ -25,7 +26,7 @@ ff4.xts$Mkt <- fff.xts[,"Mkt-RF"] + fff.xts[,"RF"]
 # re-sort
 mff4 <- ff4.xts[,c("Mkt","SMB","HML","UMD","RF")]
 
-devtools::use_data(mff4,pkg='../',overwrite=TRUE)
+usethis::use_data(mff4,overwrite=TRUE)
 
 #for vim modeline: (do not edit)
 # vim:fdm=marker:fmr=FOLDUP,UNFOLD:cms=#%s:syn=r:ft=r:nu

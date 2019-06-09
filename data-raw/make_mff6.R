@@ -9,6 +9,7 @@ suppressMessages({
 	library(xts)
 	library(Quandl)
 	library(devtools)
+	library(usethis)
 })
 
 # so much fun, guys
@@ -77,7 +78,7 @@ rm("FF5","FFM","ff_read")
 # subselect. 
 mff6 <- ff6.xts['1900-01-01::2016-12-11',]
 
-devtools::use_data(mff6,pkg='../',overwrite=TRUE)
+usethis::use_data(mff6,overwrite=TRUE)
 
 #for vim modeline: (do not edit)
 # vim:fdm=marker:fmr=FOLDUP,UNFOLD:cms=#%s:syn=r:ft=r:nu
