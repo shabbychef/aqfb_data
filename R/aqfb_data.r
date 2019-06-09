@@ -17,8 +17,8 @@
 #' @title Daily Fama French 4 Factor Returns
 #' @description The daily returns of the 4 Fama French Factors: Market, the cap factor SMB, 
 #' the growth factor HML, and the momentum factor UMD.
-#' @format An \code{xts} object with 23,715 observations and 5 columns. 
-#' The data run from January, 1927 through December, 2016.
+#' @format An \code{xts} object with 24,290 observations and 5 columns. 
+#' The data run from January, 1927 through December, 2018.
 #' As in the upstream source, the data are given in \emph{percents}, meaning a
 #' value of 1.00 corresponds to a 1\% movement.
 #' Note also that returns presumably are \sQuote{simple} returns, not log
@@ -34,10 +34,9 @@
 #'  made for weekend effects when adding the risk-free rate back to the market
 #'  rate.}
 #' }
-#' @source Kenneth French data library, via Quandl. 
+#' @source Kenneth French data library.
 #' See \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html},
-#' data description at \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html},
-#' and Quandl datasets \code{KFRENCH/FACTORS_D} and \code{KFRENCH/MOMENTUM_D}.
+#' data description at \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html}.
 #' @author Steven E. Pav \email{steven@@gilgamath.com}
 #' @examples
 #' \dontrun{
@@ -49,8 +48,8 @@
 #' @title Monthly Fama French 4 Factor Returns
 #' @description The monthly returns of the 4 Fama French Factors: Market, the cap factor SMB, 
 #' the growth factor HML, and the momentum factor UMD.
-#' @format An \code{xts} object with 1,080 observations and 5 columns. 
-#' The data run from January, 1927 through December, 2016.
+#' @format An \code{xts} object with 1,104 observations and 5 columns. 
+#' The data run from January, 1927 through December, 2018.
 #' As in the upstream source, the data are given in \emph{percents}, meaning a
 #' value of 1.00 corresponds to a 1\% movement.
 #' Note also that returns presumably are \sQuote{simple} returns, not log
@@ -63,10 +62,9 @@
 #'  \item{\code{UMD}}{The momentum factor monthly return.}
 #'  \item{\code{RF}}{The risk-free rate, presumably as a monthly rate. The average value is arround 0.28, corresponding to an annualized rate of around 3.3\%.}
 #' }
-#' @source Kenneth French data library, via Quandl. 
+#' @source Kenneth French data library.
 #' See \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html},
-#' data description at \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html},
-#' and Quandl datasets \code{KFRENCH/FACTORS_M} and \code{KFRENCH/MOMENTUM_M}.
+#' data description at \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html}.
 #' @author Steven E. Pav \email{steven@@gilgamath.com}
 #' @examples
 #' \dontrun{
@@ -84,8 +82,8 @@
 #' the profitability factor RMW,
 #' and the invesment factor CMA.
 #'
-#' @format An \code{xts} object with 642 observations and 7 columns. 
-#' The data run from July, 1963 through December, 2016.
+#' @format An \code{xts} object with 666 observations and 7 columns. 
+#' The data run from July, 1963 through December, 2018.
 #' As in the upstream source, the data are given in \emph{percents}, meaning a
 #' value of 1.00 corresponds to a 1\% movement.
 #' Note also that returns presumably are \sQuote{simple} returns, not log
@@ -113,8 +111,8 @@
 
 #' @title Daily VIX Close
 #' @description The daily closing value of the CBOE VIX index.
-#' @format An \code{xts} object with 6,802 observations and 1 columns. 
-#' The data run from January, 1990 through December, 2016.
+#' @format An \code{xts} object with 7,304 observations and 1 columns. 
+#' The data run from January, 1990 through December, 2018.
 #' The columns are defined as follows:
 #' \describe{
 #'  \item{\code{VIX}}{The closing value of the VIX index. 

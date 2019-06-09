@@ -19,10 +19,9 @@ The columns are defined as follows:
  \item{\code{RF}}{The risk-free rate, presumably as a monthly rate. The average value is arround 0.28, corresponding to an annualized rate of around 3.3\%.}
 }}
 \source{
-Kenneth French data library, via Quandl. 
+Kenneth French data library.
 See \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html},
-data description at \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html},
-and Quandl datasets \code{KFRENCH/FACTORS_M} and \code{KFRENCH/MOMENTUM_M}.
+data description at \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html}.
 }
 \usage{
 mff4

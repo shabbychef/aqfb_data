@@ -4,8 +4,8 @@
 \name{dff4}
 \alias{dff4}
 \title{Daily Fama French 4 Factor Returns}
-\format{An \code{xts} object with 23,715 observations and 5 columns. 
-The data run from January, 1927 through December, 2016.
+\format{An \code{xts} object with 24,290 observations and 5 columns. 
+The data run from January, 1927 through December, 2018.
 As in the upstream source, the data are given in \emph{percents}, meaning a
 value of 1.00 corresponds to a 1\% movement.
 Note also that returns presumably are \sQuote{simple} returns, not log
@@ -22,10 +22,9 @@ The columns are defined as follows:
  rate.}
 }}
 \source{
-Kenneth French data library, via Quandl. 
+Kenneth French data library.
 See \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html},
-data description at \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html},
-and Quandl datasets \code{KFRENCH/FACTORS_D} and \code{KFRENCH/MOMENTUM_D}.
+data description at \url{http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html}.
 }
 \usage{
 dff4
