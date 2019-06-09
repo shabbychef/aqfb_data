@@ -20,7 +20,7 @@ suppressMessages({
 
 # crap hell.
 #vix.xts <- Quandl("YAHOO/INDEX_VIX",
-	#start_date="1990-01-31",end_date="2016-12-31",
+	#start_date="1990-01-31",end_date="2018-12-31",
 	#type="xts")
 
 #vix.xts <- sanitize.TEO(vix.xts)
@@ -47,10 +47,11 @@ vxo <- readxl::read_xls(tfname, skip=1) %>%
 	filter(!is.na(VIX))
 
 vix <- rbind(vxo, vixy %>% select(Date,VIX_Close) %>% rename(VIX=VIX_Close)) %>%
-	filter(Date <= as.Date('2016-12-31'))
+	filter(Date <= as.Date('2018-12-31'))
 
 dvix <- xts(x=vix$VIX,order.by=as.Date.POSIXlt(as.POSIXlt(vix$Date)))
 colnames(dvix) <- c('VIX')
+cat('dvix is ',dim(dvix),'\n')
 
 usethis::use_data(dvix,overwrite=TRUE)
 

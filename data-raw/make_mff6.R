@@ -76,7 +76,9 @@ ff6.xts <- ff6.xts[,c("Mkt","SMB","HML","RMW","CMA","UMD","RF")]
 rm("FF5","FFM","ff_read")
 
 # subselect. 
-mff6 <- ff6.xts['1900-01-01::2016-12-11',]
+mff6 <- ff6.xts['1900-01-01::2018-12-11',]
+
+cat('mff6 is ',dim(mff6),'\n')
 
 usethis::use_data(mff6,overwrite=TRUE)
 

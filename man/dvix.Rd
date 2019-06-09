@@ -4,8 +4,8 @@
 \name{dvix}
 \alias{dvix}
 \title{Daily VIX Close}
-\format{An \code{xts} object with 6,802 observations and 1 columns. 
-The data run from January, 1990 through December, 2016.
+\format{An \code{xts} object with 7,304 observations and 1 columns. 
+The data run from January, 1990 through December, 2018.
 The columns are defined as follows:
 \describe{
  \item{\code{VIX}}{The closing value of the VIX index. 
